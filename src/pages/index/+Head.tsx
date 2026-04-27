@@ -1,54 +1,41 @@
 export default function Head() {
-  const title =
-    "Vrelte - AI Lead Qualification for HVAC, Roofing, and Plumbing";
-
+  const title = "LexGrip - AI Vocabulary Flashcards for Language Learners";
   const description =
-<<<<<<< HEAD
-    "Vrelte catches the contractor leads your phone and inbox are dropping, then answers, qualifies, routes, and books HVAC, roofing, and plumbing jobs 24/7.";
-
-  const url = "https://vrelte.com";
-  const image = "https://vrelte.com/logo.png";
-=======
     "Ask AI to generate vocabulary flashcards for the language, topic, or situation you want to practice. Definitions, pronunciation, and example sentences in seconds.";
->>>>>>> f26fd49 (feat: fixed)
 
   return (
     <>
       <title>{title}</title>
-
       <meta name="description" content={description} />
-
+      <link rel="icon" type="image/png" href="/logo.png" />
       <meta
         name="keywords"
-        content="AI lead qualification, contractor call answering, HVAC AI receptionist, roofing lead qualification, plumbing lead qualification, missed calls, emergency dispatch, contractor appointment booking"
+        content="language learning flashcards, vocabulary flashcards, AI flashcards, language learning app, study cards, pronunciation cards"
       />
+      <meta name="author" content="LexGrip" />
+      <link rel="canonical" href="https://lexgrip.com/" />
 
-      <meta name="author" content="Vrelte" />
-      <link rel="canonical" href={url} />
-
-      {/* Open Graph */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content="https://lexgrip.com/" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
-      <meta property="og:site_name" content="Vrelte" />
+      <meta property="og:image" content="https://lexgrip.com/logo.png" />
+      <meta property="og:site_name" content="LexGrip" />
+      <meta property="og:locale" content="en_US" />
 
-      {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
+      <meta name="twitter:image" content="https://lexgrip.com/logo.png" />
 
-      {/* Structured Data */}
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "SoftwareApplication",
-          name: "Vrelte",
-          applicationCategory: "BusinessApplication",
+          name: "LexGrip",
+          applicationCategory: "EducationApplication",
           operatingSystem: "Web",
-          url,
+          url: "https://lexgrip.com",
           description,
           offers: {
             "@type": "Offer",
@@ -56,11 +43,11 @@ export default function Head() {
             priceCurrency: "USD",
           },
           featureList: [
-            "AI call answering for contractors",
-            "Lead qualification for HVAC, roofing, and plumbing jobs",
-            "Emergency routing to on-call technicians",
-            "Calendar booking automation",
-            "CRM and text lead handoff",
+            "AI-generated vocabulary flashcards",
+            "Definitions and example sentences",
+            "Phonetic pronunciation",
+            "Interactive study mode",
+            "Prompt-based practice",
           ],
         })}
       </script>
@@ -68,10 +55,9 @@ export default function Head() {
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "WebPage",
-          name: title,
-          url,
-          description,
+          "@type": "WebSite",
+          name: "LexGrip",
+          url: "https://lexgrip.com",
         })}
       </script>
     </>
